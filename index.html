@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Welcome to Interactive Web Pages!</h1>
+
+  <!-- Part 1: Buttons & Event Handling -->
+  <section>
+    <h2>Event Handling Example</h2>
+    <button id="clickBtn">Click Me!</button>
+    <p id="message"></p>
+  </section>
+
+  <!-- Part 2: Interactive Features -->
+  <section>
+    <h2>Light/Dark Mode Toggle</h2>
+    <button id="toggleMode">Toggle Mode</button>
+
+    <h2>Counter Game</h2>
+    <button id="increase">+</button>
+    <button id="decrease">-</button>
+    <p>Counter: <span id="counterValue">0</span></p>
+
+    <h2>Collapsible FAQ</h2>
+    <button class="faq">What is JavaScript?</button>
+    <div class="faq-answer">JavaScript is a programming language for the web.</div>
+
+    <!-- Dropdown Menu -->
+    <h2>Simple Dropdown Menu</h2>
+    <div class="dropdown">
+      <button id="dropBtn">Menu ▼</button>
+      <div id="dropContent" class="dropdown-content">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <!-- Tabbed Interface -->
+    <h2>Tabbed Interface</h2>
+    <div class="tabs">
+      <button class="tab-btn" data-tab="tab1">Tab 1</button>
+      <button class="tab-btn" data-tab="tab2">Tab 2</button>
+      <button class="tab-btn" data-tab="tab3">Tab 3</button>
+    </div>
+
+    <div id="tab1" class="tab-content">Content for Tab 1</div>
+    <div id="tab2" class="tab-content">Content for Tab 2</div>
+    <div id="tab3" class="tab-content">Content for Tab 3</div>
+  </section>
+
+  <!-- Part 3: Form Validation -->
+  <section>
+    <h2>Sign Up Form</h2>
+    <form id="signupForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Your name"><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Your email"><br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Password"><br><br>
+
+      <button type="submit">Submit</button>
+      <p id="formMessage"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
